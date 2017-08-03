@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>Search Filtering</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<main>
+			<div id="canvas">
+			</div>
+			
+			<div id="controls">
+				<a href="#">Start</a> |
+				<a href="#">Stop</a>
+			</div>
+
+			<div id="random">
+				<h2>Add any number of random shapes</h2>
+				<form method="get">
+					<fieldset>
+						<input type="number" name="num-of-shapes" placeholder="10">
+						<input type="submit" value="Add">
+					</fieldset>
+				</form>
+			</div>
+			<div id="custom">
+				<h2>Add a shape</h2>
+				<form method="get">
+					<fieldset>Type
+						<label><input type="radio" name="class" value="square" />square</label>
+						<label><input type="radio" name="class" value="circle" />circle</label>
+						<label><input type="radio" name="class" value="star" />star</label>
+					</fieldset>
+					<fieldset>Starting point
+						<input type="number" name="starting-x" placeholder="x" step="10" min="0" max="860"/>
+						<input type="number" name="starting-y" placeholder="y" step="10" min="0" max="460"/>
+					</fieldset>
+					<fieldset>Ending point
+						<input type="number" name="ending-x" placeholder="x" step="10" min="0" max="860"/>
+						<input type="number" name="ending-y" placeholder="y" step="10" min="0" max="460"/>
+					</fieldset>
+					<fieldset>Duration
+						<input type="number" name="duration" placeholder="1000" />
+					</fieldset>
+					<input type="submit" value="Add" />
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

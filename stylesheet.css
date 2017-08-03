@@ -1,0 +1,104 @@
+body {
+	font: normal 16px Helvetica, Arial, Sans-serif;
+	background: darkred;
+}
+
+main {
+	background: white;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 50px 50px 80px 50px;
+	overflow: hidden;
+}
+
+label {
+	font-size: 16px;
+}
+
+input[type="number"] {
+	margin-right: 5px;
+	padding: 10px;
+	font-size: 20px;
+	width: 70px;
+}
+
+input[type="radio"] {
+	font-size: 2em;
+}
+
+label:first-of-type {
+	margin-left: 20px;
+}
+
+input:first-of-type {
+	margin-left: 20px;
+}
+
+input[name="duration"] {
+	width: 200px;
+}
+
+fieldset {
+	font-size: 20px;
+	border: none;
+}
+
+input[type="submit"] {
+	font-size: 25px;
+	height: 2em;
+	width: 100px;
+	border: none;
+	background: linear-gradient(lightblue, darkblue);
+	border-radius: 4px;
+}
+input[type="submit"]:active {
+	background: darkblue;
+}
+
+div#custom {
+	display: inline-block;
+	width: 48%;
+	float: left;
+	margin-left: 40px;	
+}
+div#random {
+	display: inline-block;
+	width: 48%;
+	float: right;
+}
+div#controls {
+	text-align: center;
+}
+
+
+/* Canvas and Shapes */
+
+#canvas {
+	width: 900px;
+	height: 500px;
+	background: linear-gradient(to bottom, blue, darkblue);
+	border: solid green 5px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.square, .circle, .star {
+	position: absolute;
+	z-index: 1;
+	height: 30px;
+	width: 30px;
+	background: red;
+}
+
+.circle {
+	background: purple;
+	border-radius: 50%;
+}
+
+.star {
+	z-index: 2;
+	background: transparent url("star.png");
+	background-size: 100% auto;
+}
+
